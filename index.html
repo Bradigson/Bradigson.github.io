@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Examen Piano</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="icon" href="imgs/music.svg">
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body id="body">
+        <div class="mensajeAlerta">
+            <div class="alert">
+
+                <h2 class="text-center">
+                    El campo nombre no puede tener numeros ni espacio.
+                </h2>
+                <button class="btn btn-danger" id="botonAlert">OK</button>
+            </div>
+        </div>
+
+
+        <div class="mensajeAlerta2">
+            <div class="alert">
+
+                <h2 class="text-center">
+                    El campo nombre esta vacio.
+                </h2>
+                <button class="btn btn-danger" id="botonAlert2">OK</button>
+            </div>
+        </div>
+
+        <div class="mensajeAlerta3">
+            <div class="alert">
+
+                <h2 class="text-center">
+                    El ccampo instrumento no puede contener numeros ni espacios.
+                </h2>
+                <button class="btn btn-danger" id="botonAlert3">OK</button>
+            </div>
+        </div>
+
+
+        <div class="mensajeAlerta4">
+            <div class="alert">
+
+                <h2 class="text-center">
+                    El campo instrumento no puede estar vacio.
+                </h2>
+                <button class="btn btn-danger" id="botonAlert4">OK</button>
+            </div>
+        </div>
+
+        
+
+
+        <div class="mensajeAlerta5">
+            <div class="alert">
+
+                <h2 class="text-center">
+                    <span id="piano"><h1></h1></span>  Este no es tu instrumento.
+                </h2>
+                <button class="btn btn-danger" id="botonAlert5">OK</button>
+            </div>
+        </div>
+
+
+        
+        <div class="mensajeAlerta6">
+            <div class="alert">
+
+                <h2 class="text-center">
+                    <span id="code2"><h1></h1></span> El campo codigo no puede contener letras.
+                </h2>
+                <button class="btn btn-danger" id="botonAlert6">OK</button>
+            </div>
+        </div>
+
+
+        
+        <div class="mensajeAlerta7">
+            <div class="alert">
+
+                <h2 class="text-center">
+                    <span id="code"><h1></h1></span>  Este no es tu codigo.
+                </h2>
+                <button class="btn btn-danger" id="botonAlert7">OK</button>
+            </div>
+        </div>
+
+
+
+           
+        <div class="mensajeAlerta8">
+            <div class="alert">
+
+                <h2 class="text-center">
+                     El campo codigo no puede estar vaio.
+                </h2>
+                <button class="btn btn-danger" id="botonAlert8">OK</button>
+            </div>
+        </div>
+
+        <div class="container">
+
+          <div class="content1">
+            <div class="contenedor-img">
+                <img src="imgs/graduates.svg" alt="something went wrong" id="img1">
+                </div>
+              <div class="contenedor-form1">
+                <form action="" name="from1">
+                    <input type="text"  name="input1" value="" placeholder="Nombre" data-toggle="tooltip" title="Escribe tu nombre sin numeros y sin espacio.">
+                    <input type="text"  name="input2" value="" placeholder="Instrumento" data-toggle="tooltip" title="Esribe el nombre de tu instrumento, no numeros no espacio.">
+                    <input type="password"  name="input3" value="" placeholder="Codigo Estudiantil" data-toggle="tooltip" title="Aca coloca el codigo que te entrgo tu profesor Bradigson.">
+                    <button class="btn btn-outline-light" id="boton1__form1">Registrar</button>
+                </form>
+              </div>
+
+              <div class="contenedor-carta">
+                <div class="card" id="carta">
+                    <div class="card-header" id="card__header">
+                        <div class="card-title">
+                            <h2 class="text-center" data-toggle="tooltip" title="Hola!. este es tu primer examen de piano, en esta carta prodar ver tu calificacion obtenida cuando finalices tu examen, asegurate de estar preparada antes de iniciar tu valuacion">Primer Examen de Piano</h2>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <span><h2>Nom:<span class="infoData1"></span></span>
+                            <span><h2>Inst: <span class="infoData2"></span></h2></span>
+                            <span><h2>Calificacion:<span class="infoData3"><span></h2></span>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark" id="inicciar">Empezar Examen</button>
+                </div>
+              </div>
+          </div>
+
+
+          <!--Examen-->
+          <form action="" name="examen" id="examen">
+              <div id="question">
+                  <p>1. Complete cada nota con su cifrado correspondiente.</p>
+                 <input type="text" class="form-control" name="q1" value="" placeholder="do, re, mi, fa, sol, la, si" id="inpu1">
+                
+              </div>
+
+              <div id="question">
+                  <p>2. ¿Los modos son los que indian cuando un acordes es mayor, menor o disminuido?</p>
+                  <p><input type="radio" name="q2" value="true"> A. Verdadero</p>
+                  <p><input type="radio" name="q2" value="false"> B. Falso</p>
+              </div>
+
+              <div id="question">
+                  <p>3. ¿Cuantos acrordes contiene una escala musical?</p>
+                  <p><input type="radio" name="q3" value="a"> A. 7</p>
+                  <p><input type="radio" name="q3" value="b"> B. 4</p>
+                  <p><input type="radio" name="q3" value="c"> C. 5</p>
+                  <p><input type="radio" name="q3" value="d"> D. 6</p>
+              </div>
+
+
+              <div id="question">
+                  <p>4. ¿El sostenido se utiliza para bajarle medio tono a los sonidos musiales?</p>
+                  <p><input type="radio" name="q4" value="true"> A. Verdadero</p>
+                  <p><input type="radio" name="q4" value="false"> B. Falso</p>
+              </div>
+
+              <div id="question">
+                  <p>5. ¿La tonalidad de G es la unica tonalidad mayor que contiene una sola alteracion "un solo sostenido"?</p>
+                  <p><input type="radio" name="q5" value="true"> A. Verdadero</p>
+                  <p><input type="radio" name="q5" value="false"> B. False</p>
+              </div>
+
+
+              <div id="question">
+                  <p>6. ¿En la tonalidad de G el acorde de E es:?</p>
+                  <p><input type="radio" name="q6" value="a"> A. Mayor</p>
+                  <p><input type="radio" name="q6" value="b"> B. Menor</p>
+              </div>
+
+              <div id="question">
+                  <p>7. ¿En la tonalidad de G el acorde B es:?</p>
+                  <p><input type="radio" name="q7" value="a"> A. Mayor</p>
+                  <p><input type="radio" name="q7" value="b"> B. Disminuido</p>
+                  <p><input type="radio" name="q7" value="c"> C. Menor</p>
+              </div>
+
+              <div id="question">
+                  <p>8. ¿Este es la escala de G mayor <span class="text-warning"> sol, la , sib, do, re, mi fa#, sol</span>?</p>
+                  <p><input type="radio" name="q8" value="true"> A. Verdadero</p>
+                  <p><input type="radio" name="q8" value="false"> B. Falso</p>
+              </div>
+
+              <div id="question">
+                  <p>9. ¿Esta es la escala de D mayor <span class=text-warning>re, mi, fa#, sol, la, si, do#, re</span>?</p>
+                  <p><input type="radio" name="q9" value="a"> A. Vedadero</p>
+                  <p><input type="radio" name="q9" value="b"> B. Falso</p>
+              </div>
+
+            
+              <div id="question">
+                  <p>10. ¿En la tonalidad de D mayor el acorde de C es:?</p>
+                  <p><input type="radio" name="q10" value="a"> A. Mayor</p>
+                  <p><input type="radio" name="q10" value="b"> B. Sostenido Menor</p>
+                  <p><input type="radio" name="q10" value="c"> C. Sostenido Disminuido</p>
+                  <p><input type="radio" name="q10" value="d"> D. Menor</p>
+              </div>
+
+
+              <div id="question">
+                  <p>11. Escriba la escala de A mayor, usar comas y espacios por ejemplo:<span data-toggle="tooltip" title="do, re, mi, fa, etc."> aca</span></p>
+                  <input type="text" class="form-control" name="q11" value="" placeholder="Escribe la escala aca">
+              </div>
+
+              <div id="question">
+                  <p>12. En la escala de A mayor el G es:</p>
+                  <p><input type="radio" name="q12" value="a"> A. Menor</p>
+                  <p><input type="radio" name="q12" value="b"> B. Sostenido Mayor</p>
+                  <p><input type="radio" name="q12" value="c"> C. Disminuido</p>
+                  <p><input type="radio" name="q12" value="d"> D. Sostenido Disminuido</p>
+              </div>
+
+
+              <div id="question">
+                  <p>13. En la escala de A mayor las notas de C#m son:</p>
+                  <p><input type="radio" name="q13" value="a"> A. re fa la</p>
+                  <p><input type="radio" name="q13" value="b"> B. do mib sol</p>
+                  <p><input type="radio" name="q13" value="c"> C. sol si re</p>
+                  <p><input type="radio" name="q13" value="d"> D. do# mi sol#</p>
+              </div>
+
+
+              <div id="question">
+                  <p>14. Corrija el siguiente acorde <span class="text-warning"> Bm : si re fa lab</span></p>
+                  <input type="text" class="form-control" name="q14" value="" placeholder="Acorde de Bm aca" data-toggle="tooltip" title="Solo escriba las notas del acordes como crea, no mas">
+              </div>
+
+              <div id="question">
+                  <p>15. ¿Cuantas alteraciones tiene la escala de E mayor?</p>
+                  <p><input type="radio" name="q15" value="a"> A. 5</p>
+                  <p><input type="radio" name="q15" value="b"> B. 8</p>
+                  <p><input type="radio" name="q15" value="c"> C. 4</p>
+                  <p><input type="radio" name="q15" value="d"> D. 3</p>
+              </div>
+
+              <div id="question">
+                  <p>16. ¿Ejecutar la nota de si# es lo mismo que ejecutar la de do?</p>
+                  <p><input type="radio" name="q16" value="a"> A. Verdadero</p>
+                  <p><input type="radio" name="q16" value="b"> B. Falso</p>
+              </div>
+
+              <div id="question">
+                  <p>17. ¿Cuantas alteraciones tiene la escala de B mayor?</p>
+                  <p><input type="radio" name="q17" value="a"> A. 3</p>
+                  <p><input type="radio" name="q17" value="b"> B. 6</p>
+                  <p><input type="radio" name="q17" value="c"> C. 5</p>
+                  <p><input type="radio" name="q17" value="d"> D. 2</p>
+              </div>
+              
+              <div id="question">
+                  <p>18. ¿Estet acorde <span class="text-warning">D#m</span> es el acorde de re sostenido menor</p>
+                  <p><input type="radio" name="q18" value="true"> A. Verdadero</p>
+                  <p><input type="radio" name="q18" value="false"> B. Falso</p>
+              </div>
+
+              <div id="question">
+                  <p>19. En la tonalidad de B mayor el acorde de F es</p>
+                  <p><input type="radio" name="q19" value="a"> A. Sostenido Menor</p>
+                  <p><input type="radio" name="q19" value="b"> B. Sostenido Disminuido</p>
+                  <p><input type="radio" name="q19" value="c"> C. Sostenido Mayor</p>
+                  <p><input type="radio" name="q19" value="d"> D. Mayor</p>
+              </div>
+
+
+              <div id="question20">
+                  <p>20. En la tonalidad de B mayor C y D son:</p>
+                  <p><input type="radio" name="q20" value="a"> A. Mayores</p>
+                  <p><input type="radio" name="q20" value="b"> B. Sostenidos Disminuidos</p>
+                  <p><input type="radio" name="q20" value="c"> C. Sostenidos Menores</p>
+                  <p><input type="radio" name="q20" value="d"> D. Menores</p>
+                  <p><input type="radio" name="q20" value="e"> E. Disminuidos</p>
+              </div><br>
+
+              <button class="btn btn-success" id="botonDone">Enviar y Terminar</button>
+          </form>
+        </div>
+        
+        <script src="js/App.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    </body>
+</html>

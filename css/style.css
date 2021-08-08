@@ -1,0 +1,255 @@
+
+.container{
+
+    padding-top:25px;
+    background:rgba(218, 36, 187,.9);
+    border-radius:20px;
+    padding-bottom:30px;
+    margin-top:100px;
+    margin-bottom:30px;
+    
+}
+.content1{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+.contenedor-img{
+    display:flex;
+    justify-content:center;
+}
+#img1{
+    width:150px;
+    filter:drop-shadow(1px 4px 6px rgba(0,0,0,.7));
+    border-radius: 20rem;
+    animation-name:img;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+}
+.contenedor-form1{
+    margin-top:30px;
+}
+
+form > input{
+    margin-top:15px;
+    background:rgba(255,255,255,.5);
+    backdrop-filter:blur(10px);
+    border:none;
+    width:250px;
+    padding:8px 10px;
+    border-radius:10px;
+    outline:none;
+
+}
+form > input::placeholder{
+    color:#fff;
+}
+form > input:focus{
+    background:rgba(255,255,255,.9);
+    border:none;
+    outline: none;
+}
+form{
+    display:grid;
+    place-items:center;
+    
+    
+    
+}
+#boton1__form1{
+    margin-top:25px;
+    box-shadow:none;
+}
+@keyframes img{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255,255,255,.7);
+    }
+    70%{
+        box-shadow: 0 0 0 7px rgba(255,255,255,.0);
+
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255,255,255,.0);
+
+    }
+}
+/*MensajerAlerta*/
+.mensajeAlerta, .mensajeAlerta2, .mensajeAlerta3, .mensajeAlerta4, .mensajeAlerta5, .mensajeAlerta6, .mensajeAlerta7, .mensajeAlerta8{
+    background:rgba(0, 0, 0, 0.85);
+    position:absolute;
+    z-index:100;
+    top:0px;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display:none;
+}
+.alert{
+    background:rgba(255,255,255);
+    padding:10px 10px;
+    width:250px;
+    display:grid;
+    place-items:center;
+      
+}
+
+#botonAlert{
+ 
+    margin-top:10px;
+}
+
+@keyframes mensjaAlerts{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+        }
+}
+
+
+
+/*Carta de informacion*/
+.contenedor-carta{
+  
+   margin-top:30px;
+  display:none;
+    
+}
+#carta{
+    background:rgba(167, 8, 87,.3);
+    backdrop-filter:blur(10px);
+    color:#fff;
+    text-shadow:1px 3px 5px rgba(0,0,0);
+    display:grid;
+    place-items:center;
+    padding-bottom:10px;
+
+}
+#card__header{
+    background:rgba(167, 8, 87,.4);
+    backdrop-filter:blur(10px);
+}
+
+#inicciar{
+    width:150px;
+    opacity:.0;
+    margin-top:-10px;
+}
+#body{
+    background:rgb(100, 9, 136);
+}
+
+
+
+/*examen*/
+#examen{
+    margin-top:70px;
+    display:none;
+}
+#question, #question20{
+    background:rgba(83, 13, 124, 0.6);
+    backdrop-filter:blur(10px);
+    margin-bottom:20px;
+    padding:10px 10px;
+    border-radius:5px;
+    color:#fff;
+    text-shadow:1px 2px 4px rgba(0,0,0,.4);
+    
+}
+
+/*media query*/
+@media screen and (min-width:360px){
+    form > input{
+        width:320px;
+    }
+    #boton1__form1{
+        width:250px;
+    }
+    #card__header{
+        width:100%;
+    }
+}
+
+@media screen and (min-width:411px){
+    form > input{
+        width:350px;
+    }
+    #boton1__form1{
+        width:280px;
+    }
+}
+
+
+@media screen and (min-width:768px){
+
+    .container{
+        margin-top:250px;
+    
+    }
+    .content1{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        align-items:center;
+    }
+    #img1{
+        width:280px;
+    }
+    #question{
+        height:210px;
+    }
+    #question20{
+        height:260px;
+
+    }
+}
+
+
+@media screen and (min-width:1024px){
+    .container{
+        margin-top:350px;
+    }
+    #img1{
+        width:350px;
+        
+    }
+    form > input{
+        width:370px;
+        margin-top:30px;
+    }
+}
+
+
+@media screen and (min-width:1026px){
+    .container{
+        margin-top:130px;
+    }
+    .alert{
+        width:400px;
+    }
+    form > input{
+        width:500px;
+    }
+    #img1{
+        width:420px;
+    }
+}
+
+.infoData3{
+    color: #fff;
+	margin-top: 30%;
+	text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 0px rgba(0,178,255,1),
+		0 0 0px rgba(0,178,255,1),
+		0 0 0px rgba(38,104,127,1),
+		0 0 0px rgba(38,104,127,1),
+		0 0 0px rgba(38,104,127,1),
+		0 0 0px rgba(38,104,127,1),
+		0 0 0px rgba(38,104,127,1),
+		0 0 0px rgba(38,104,127,1);
+
+}
